@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 100px;
+  display: flex column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.control-container {
+  display: flex grid;
+  justify-content: center;
+  align-items: center;
+}

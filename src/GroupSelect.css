@@ -1,0 +1,4 @@
+.GroupSelect select,
+.GroupSelect option {
+  width: 300px;
+}
