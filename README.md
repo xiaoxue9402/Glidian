@@ -104,7 +104,7 @@ const wash = await User.findByPk(3);
 const groups = await wash.getGroups();
 
 // Find all Users in a Group
-const crew = await User.findByPk(2);
+const crew = await Group.findByPk(2);
 const users = await crew.getUsers();
 
 // Updating basics
