@@ -3,7 +3,7 @@
  ****************************************************************************************/
 
 const router = (module.exports = require("express").Router());
-// const { Users, UserGroups } = require("./db")
+// const { User, Group } = require("./db")
 
 module.exports = router;
 
