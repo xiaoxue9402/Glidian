@@ -10,7 +10,7 @@ const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const { Group } = require("./db");
+const { Group, User } = require("./db");
 const userRoutes = require("./users");
 
 const app = express();
@@ -28,6 +28,15 @@ app.get("/groups", async (req, res, next) => {
     next(error);
   }
 });
+
+app.get("/groups/:group/users", async (req, res, next) => {
+  try {
+    let group = await Group.findByPk(req.params.group)
+    res.json(await group.getUsers());
+  } catch (error) {
+    next(error);
+  }
+})
 
 app.listen(5000, () => {
   console.log("App running on http://localhost:5000");

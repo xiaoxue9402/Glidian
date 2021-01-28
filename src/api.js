@@ -13,7 +13,17 @@ function postJson(url, body) {
     },
   });
 }
-
+//
 export function listGroups() {
   return fetchJson("/groups");
+}
+// params: {Integer}
+// output: [Users]
+export function listGroup(val = 1) {
+  return fetchJson(`/groups/${val}/users`);
+}
+
+export function listUsers() {
+  return fetchJson("/users")
+
 }

@@ -20,3 +20,18 @@ router.get("/", async (req, res, next) => {
     next(error);
   }
 });
+// router.get("/:group", async (req, res, next) => {
+//   try {
+//     // res.json(await);
+//   } catch (error) {
+//     next(error);
+//   }
+// });
+
+// app.get("/groups", async (req, res, next) => {
+//   try {
+//     res.json(await Group.findAll({ attributes: ["id", "name"] }));
+//   } catch (error) {
+//     next(error);
+//   }
+// });
